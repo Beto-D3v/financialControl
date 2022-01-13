@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>controleFinanceiro</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Imagens/money.png" type="image/png">
+  </head>
+
+  <body>
+    <main id="containerCalc">
+      <h3 id="finControl">Financial Control</h3>
+
+      <h4 id="curBalance">Current Balance</h4>
+      <p id="balance">R$0,00</p>
+
+      <div class="revXExp">
+        <h5 id="revenue">Revenues</h5>
+        <h5 id="expense">Expenses</h5>
+      </div>
+
+      <div class="revXExp">
+        <span id="revenueValue">R$0,00</span>
+        <span id="expenseCost">R$0,00</span>
+      </div>
+
+      <h4 id="transactions">Transactions</h4>
+      <div id="newTransactions"></div>
+      <hr />
+
+      <h4 id="newTransaction">New Transaction</h4>
+      <hr />
+
+      <p id="transacName">Name</p>
+
+      <input
+        type="text"
+        name="transactionText"
+        id="transactionText"
+        placeholder="Transaction´s name"
+      />
+
+      <p id="value" class="values">Value</p>
+      <br/>
+
+      <p id="valueType" class="values">Negative-expenses|positive-revenues</p>
+
+      <input type="number" id="number" placeholder="Transaction´s value" />
+
+      <input type="button" value="Add Value" id="btnAdd" />
+
+      <p id="dev">Developed by Roberto_Macedo!</p>
+    </main>
+
+
+    <script src="tarefa.js"></script>
+  </body>
+</html>
